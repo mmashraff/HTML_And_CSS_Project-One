@@ -1,0 +1,124 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "cairo", sans-serif;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page .info {
+    padding: 30px;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.page .info .normal {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.page .info .bold {
+    color: #48475b;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.page .tools {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.page .tools .box {
+    box-shadow: -1px 8px 13px 7px #eee;
+    position: relative;
+    transition: 0.3s;
+    height: 200px;
+}
+
+.page .tools .box:hover {
+    transform: scale(1.1);
+}
+
+.page .tools .green {
+    border: 5px solid;
+    border-color: #50cfcd87 transparent transparent transparent;
+}
+
+.page .tools .green:hover {
+    z-index: 1;
+    border-color: rgb(25, 175, 117) transparent transparent transparent
+}
+
+.page .tools .red {
+    border: 5px solid;
+    border-color: #ed5355c4 transparent transparent transparent;
+}
+
+.page .tools .red:hover {
+    z-index: 1;
+    border-color: red transparent transparent transparent
+}
+
+.page .tools .yellow {
+    border: 5px solid;
+    border-color: #fcad4db7 transparent transparent transparent;
+}
+
+.page .tools .yellow:hover {
+    z-index: 1;
+    border-color: yellow transparent transparent transparent
+}
+
+.page .tools .blue {
+    border: 5px solid;
+    border-color: #5b9de9a9 transparent transparent transparent;
+}
+
+.page .tools .blue:hover {
+    z-index: 1;
+    border-color: blue transparent transparent transparent
+}
+
+.page .tools .box .content h2 {
+    color: #4d4e57;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.page img {
+    padding: 20px;
+    width: 80px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+@media(max-width: 740px){
+    img {
+        display: none;
+    }
+    .page .tools .box {
+        height: 270px;
+    }
+}
